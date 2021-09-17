@@ -1,0 +1,100 @@
+body {
+    background-color: grey;
+    font-family: Tahoma;
+    text-align: center;
+}
+
+h1 {
+    font-size: 55px;
+    text-shadow: -2px -2px 7px rgb(82, 82, 82);
+}
+
+h3 {
+   font-size: 40px; 
+   text-shadow: -2px -2px 3px rgb(82, 82, 82);
+}
+
+img {
+    max-width: 500px;
+    max-height: 500px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#img {
+    position: relative;
+    margin: auto;
+}
+
+#greet {
+    position: relative;
+    text-align: center;
+    bottom: 100px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+#setting {
+    margin-top: -50px;
+    font-weight: bolder;
+}
+
+.set {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.alarms {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-weight: bolder;    
+    margin-bottom: 70px;
+}
+
+.submit {
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 29px;
+    width: 70px;
+    margin-top: 24px;
+    margin-left: 15px;
+}
+
+input {
+    cursor: pointer;
+    height: 25px;
+    margin-top: 24px;
+    margin-left: 15px;
+}
+
+#dance {
+    background-color: rgb(75, 75, 75);
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    height: 80px;
+    width: 400px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 100px;
+}
+
+button:active {
+    background-color: black;
+    box-shadow: 0 5px #666;
+    transform: translate(4px);
+}
+
+#clock {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#clock-ampm {
+    font-size: 35px;
+}
