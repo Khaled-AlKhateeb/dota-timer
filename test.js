@@ -190,21 +190,35 @@ var removeButton
 window.addEventListener("click", function clickme(event) {
     removeButton = event.target.id;
     if (removeButton == "wakeRemove") {
-        removeMe(wakeCall);
+        modify("wake");
     }
     if (removeButton == "lunchRemove") {
-        removeMe(lunchText, "lunch", lunchCall, lunchDuration, lunchAudio);
+        modify("lunch");
     }
     if (removeButton == "sleepRemove") {
-        removeMe(sleepText, "sleep", sleepCall, sleepDuration, sleepAudio);
+        modify("sleep");
     }
 })
 
-function removeMe(param1) {
-    wakeDuration = false;
-    param1 = "";
-    wakeText.textContent = "SET ALARM";
-    wakeText.style.color = "black"
-    document.getElementById("wake").value = "";
-    wakeAudio.pause();
-};
+var anyVar1;
+var anyVar2;
+var anyVar3;
+var anyVar4;
+var anyVar5;
+
+function modify(anyParA1) {
+    anyVar1 = anyParA1 + "Call";
+    anyVar2 = anyParA1 + "Duration";
+    anyVar3 = anyParA1 + "Audio";
+    anyVar4 = anyParA1 + "Text";
+    document.getElementById(anyParA1).value = "";
+    removeMe()
+}
+
+function removeMe() {
+    eval(anyVar1 + " = ''");
+    eval(anyVar2 + " = false");
+    eval(anyVar3 + ".pause()");
+    eval(anyVar4 + ".textContent = 'SET ALARM'");
+    eval(anyVar4 + ".style.color = 'black'");
+}
