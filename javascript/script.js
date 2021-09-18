@@ -1,11 +1,11 @@
-var wakeAudio = new Audio("Alarm-Fast-A1-www.fesliyanstudios.com.mp3");
-var lunchAudio = new Audio("Alarm-Fast-A1-www.fesliyanstudios.com.mp3");
-var sleepAudio = new Audio("Alarm-Fast-A1-www.fesliyanstudios.com.mp3");
-var invoker;
-var text;
-var alarmValue;
+//variables
+var wakeAudio = new Audio("./audio/Alarm-Fast-A1-www.fesliyanstudios.com.mp3")
+var lunchAudio = new Audio("./audio/Alarm-Fast-A1-www.fesliyanstudios.com.mp3");
+var sleepAudio = new Audio("./audio/Alarm-Fast-A1-www.fesliyanstudios.com.mp3");
+var invoker; //the event invoker 
+var alarmValue; //value of changed input
 var hours;
-var alarmCompare;
+var alarmCompare;   
 var alarmActivation;
 var clock = document.getElementById("clock-time");
 var ante = document.getElementById("clock-ampm");
@@ -114,19 +114,19 @@ function duration() {
 
     switch (true) {
         case morning.includes(during):
-            image.src = "dota-logo1.jpg";
+            image.src = "./image/dota-logo1.jpg";
             greet.textContent = "GOOD MORNING";
             break;
         case afternoon.includes(during):
-            image.src = "images.jpg";
+            image.src = "./image/images.jpg";
             greet.textContent = "GOOD AFTERNOON";
             break;
         case evening.includes(during):
-            image.src = "images (1).jpg";
+            image.src = "./image/images (1).jpg";
             greet.textContent = "GOOD EVENING";
             break;
         case night.includes(during):
-            image.src = "dota-2-logo-vector-01.png";
+            image.src = "./image/dota-2-logo-vector-01.png";
             greet.textContent = "GOOD NIGHT";
     };
 };
